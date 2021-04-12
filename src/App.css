@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+body{
+    background-color: #a4a3a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app{
+    margin-top: 10vh;
+    background-color: #181818;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    padding-top: 10px;
+    width: 25vw;
+    padding-bottom: 10px;
+}
+
+.calc-container{
+    width: 300px;
+    height: auto;
+}
+
+.row{
+    
+    display: flex;
+    width: 100%;
+}
