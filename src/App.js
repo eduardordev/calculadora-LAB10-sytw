@@ -11,7 +11,11 @@ class App extends Component {
         super(props);
 
         this.state ={
-            input: ""
+            input: "",
+            op:"",
+            x1: "",
+            x2:"",
+            result:"",
         };
     }
 
@@ -32,32 +36,32 @@ class App extends Component {
                     <Input input={this.state.input}></Input>
                     <div className="row">
                         <ClearButton handleClear={()=>this.setState({input:""})}>C</ClearButton>
-                        <Button>+/-</Button>
-                        <Button>%</Button>
-                        <Button handleClick={this.addInput}>÷</Button>
+                        <Button addVal={()=>this.setState({input: math.evaluate("-1 * " + this.state.input)})}>+/-</Button>
+                        <Button addVal={()=>this.setState({op: "%",x1:this.state.input,input: ""})}>%</Button>
+                        <Button addVal={()=>this.setState({op: "/",x1:this.state.input,input: ""})}>÷</Button>
                     </div>
                     <div className="row">
                         <Button addVal={()=>this.setState({input: this.state.input + 7})}>7</Button>
                         <Button addVal={()=>this.setState({input: this.state.input + 8})}>8</Button>
                         <Button addVal={()=>this.setState({input: this.state.input + 9})}>9</Button>
-                        <Button handleClick={this.addInput}>x</Button>
+                        <Button addVal={()=>this.setState({op: "*",x1:this.state.input,input: ""})}>x</Button>
                     </div>
                     <div className="row">
                         <Button addVal={()=>this.setState({input: this.state.input + 4})}>4</Button>
                         <Button addVal={()=>this.setState({input: this.state.input + 5})}>5</Button>
                         <Button addVal={()=>this.setState({input: this.state.input + 6})}>6</Button>
-                        <Button handleClick={this.addInput}>-</Button>
+                        <Button addVal={()=>this.setState({op: "-",x1:this.state.input,input: ""})}>-</Button>
                     </div>
                     <div className="row">
                         <Button addVal={()=>this.setState({input: this.state.input + 1})}>1</Button>
                         <Button addVal={()=>this.setState({input: this.state.input + 2})}>2</Button>
                         <Button addVal={()=>this.setState({input: this.state.input + 3})}>3</Button>
-                        <Button handleClick={this.addInput}>+</Button>
+                        <Button addVal={()=>this.setState({op: "+",x1:this.state.input,input: ""})}>+</Button>
                     </div>
                     <div className="row">
                         <Button addVal={()=>this.setState({input: this.state.input + 0})}>0</Button>
-                        <Button handleClick={this.addInput}>.</Button>
-                        <EqualButton handleClick={() => this.isEqualTo()}>=</EqualButton>
+                        <Button  addVal={()=>this.setState({input: this.state.input + '.'})}>.</Button>
+                        <EqualButton addVal={()=>this.setState({input:math.evaluate(this.state.x1+this.state.op+this.state.input)})}>=</EqualButton>
                     </div>
                 </div>
             </div>

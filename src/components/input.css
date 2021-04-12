@@ -2,7 +2,6 @@
 
 .input{
     height: auto;
-    width: auto;
     word-wrap: break-word;
     display: flex;
     justify-content: flex-end;
