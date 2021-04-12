@@ -19,7 +19,7 @@ class App extends Component {
         this.setState({ input: this.state.input + val });
     }
 
-    Equal(){
+    isEqualTo(){
         this.setState({ input: math.evaluate(this.state.input) });
     }
 
@@ -55,10 +55,9 @@ class App extends Component {
                         <Button handleClick={this.addInput}>+</Button>
                     </div>
                     <div className="row">
-                        <div className="empty"></div>
                         <Button addVal={()=>this.setState({input: this.state.input + 0})}>0</Button>
                         <Button handleClick={this.addInput}>.</Button>
-                        <EqualButton handleClick={() => this.Equal()}>=</EqualButton>
+                        <EqualButton handleClick={() => this.isEqualTo()}>=</EqualButton>
                     </div>
                 </div>
             </div>

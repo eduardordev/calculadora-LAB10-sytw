@@ -9,10 +9,15 @@
     font-weight: 2em;
     background-color: #6d6d6d;
     color:white;
-    flex: 1;
+    flex: 2;
     outline: none;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     border-radius: 10px;
     margin: 10px;
+}
+
+.eq-btn:hover{
+    background-color: #bbbbbc;
+    color: black;
 }

@@ -16,6 +16,10 @@
     margin: 10px;
 }
 
+.button-container:hover{
+    background-color: #444444;
+}
+
 .operatorButt{
     background-color: #313131;
     color: white;
@@ -24,3 +28,7 @@
     border-radius: 15px;
 }
 
+.operatorButt:hover{
+    background-color: #bbbbbc;
+    color: black;
+}

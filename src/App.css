@@ -14,13 +14,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 75vh;
     padding-top: 10px;
     width: 25vw;
     padding-bottom: 10px;
 }
 
 .calc-container{
+    top: 3vh;
     width: 275px;
     height: auto;
 }

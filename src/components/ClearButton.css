@@ -15,3 +15,7 @@
     border-radius: 15px;
     margin: 10px;
 }
+
+.clear-btn:hover{
+    background-color: #444444;
+}

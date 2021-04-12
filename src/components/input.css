@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
 
 .input{
-    height: 15vh;
+    height: auto;
+    width: auto;
+    word-wrap: break-word;
     display: flex;
-    overflow-wrap: break-word;
     justify-content: flex-end;
     align-items: center;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
-    font-size: 3em;
+    font-size: 2em;
     background-color: #181818;
     color: white;
     padding: 0.5em;
-    outline: 1px solid  #181818;
+    outline: none;
+    border: none;
+    resize: none;
 }
