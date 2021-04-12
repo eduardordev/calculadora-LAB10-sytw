@@ -27,8 +27,6 @@ class App extends Component {
         this.setState({ input: math.evaluate(this.state.input) });
     }
 
-
-
     render() {
         return (
             <div className="app">
