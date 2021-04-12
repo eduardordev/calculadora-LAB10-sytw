@@ -2,7 +2,7 @@ import  React from 'react';
 import './button.css';
 
 const isOperator = val =>{
-    return !isNaN(val) || val === "." || val === "=";
+    return !isNaN(val) || val === "." /*|| val === "="*/ ;
 }
 
 const Button = props =>(
