@@ -17,5 +17,6 @@
 }
 
 .clear-btn:hover{
-    background-color: #444444;
+    background-color: #bbbbbc;
+    color: black;
 }

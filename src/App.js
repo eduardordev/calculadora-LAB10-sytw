@@ -33,7 +33,7 @@ class App extends Component {
                 <div className="calc-container">
                     <Input input={this.state.input}></Input>
                     <div className="row">
-                        <ClearButton handleClear={()=>this.setState({input:""})}>C</ClearButton>
+                        <ClearButton handleClear={() => this.setState({ input: "",x1:"",x2:"",op:"",result:"" })}>C</ClearButton>
                         <Button addVal={()=>this.setState({input: math.evaluate("-1 * " + this.state.input)})}>+/-</Button>
                         <Button addVal={()=>this.setState({op: "%",x1:this.state.input,input: ""})}>%</Button>
                         <Button addVal={()=>this.setState({op: "/",x1:this.state.input,input: ""})}>÷</Button>
